@@ -9,10 +9,10 @@ export default function ContactUsSection() {
         {" "}
         {/* Added margin-left for larger screens and margin-bottom for mobile */}
         <h1 className="text-4xl sm:text-7xl font-extrabold leading-tight mb-4 text-white">
-          Let's Start Something Great Together
+          Let&apos;s Start Something Great Together
         </h1>
         <p className="text-white/70 text-lg sm:text-xl mb-6">
-          Reach out to us today and let's make amazing things happen!
+          Reach out to us today and let&apos;s make amazing things happen!
         </p>
         <Link href='#contactform'>
           <button className="bg-[#FF3C1B] text-white px-6 py-3 rounded-[75px] font-semibold border-2 border-[#DE2F04] bg-opacity-10 backdrop-blur-md shadow-lg hover:shadow-xl hover:bg-opacity-20 transition-all duration-300">

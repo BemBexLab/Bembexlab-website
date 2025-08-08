@@ -6,11 +6,11 @@ import { useState } from "react";
 export default function ContactUsSection() {
   const [form, setForm] = useState({
     first_name: "",
-    last_name: "",
+    last_name: "", // optional
     email: "",
-    phone: "",
-    service: "",
-    subject: "",
+    phone: "", // optional
+    service: "", // optional
+    subject: "", // optional
     message: "",
   });
 
@@ -26,30 +26,36 @@ export default function ContactUsSection() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (isSubmitting) return;
     setIsSubmitting(true);
 
-    const res = await fetch("/api/contact", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(form),
-    });
-
-    if (res.ok) {
-      alert("Message sent successfully!");
-      setForm({
-        first_name: "",
-        last_name: "",
-        email: "",
-        phone: "",
-        service: "",
-        subject: "",
-        message: "",
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
       });
-    } else {
-      alert("There was an error sending your message.");
-    }
 
-    setIsSubmitting(false);
+      if (res.ok) {
+        alert("Message sent successfully!");
+        setForm({
+          first_name: "",
+          last_name: "",
+          email: "",
+          phone: "",
+          service: "",
+          subject: "",
+          message: "",
+        });
+      } else {
+        const data = await res.json().catch(() => ({}));
+        alert(data?.error || "There was an error sending your message.");
+      }
+    } catch (err) {
+      alert("There was an error sending your message.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -125,10 +131,10 @@ export default function ContactUsSection() {
               onChange={handleChange}
               type="text"
               className="w-full sm:w-1/2 p-3 rounded-lg bg-[#2E2E2E] text-white border-2 border-[#DE2F04]"
-              placeholder="Last Name"
-              required
+              placeholder="Last Name (optional)"
             />
           </div>
+
           <div className="flex flex-col sm:flex-row sm:space-x-4 mb-6">
             <input
               name="email"
@@ -145,25 +151,25 @@ export default function ContactUsSection() {
               onChange={handleChange}
               type="tel"
               className="w-full sm:w-1/2 p-3 rounded-lg bg-[#2E2E2E] text-white border-2 border-[#DE2F04]"
-              placeholder="Phone number"
-              required
+              placeholder="Phone number (optional)"
             />
           </div>
+
           <div className="mb-6">
             <select
               name="service"
               value={form.service}
               onChange={handleChange}
               className="w-full p-3 rounded-lg bg-[#2E2E2E] text-white border-2 border-[#DE2F04]"
-              required
             >
-              <option value="">Select services</option>
+              <option value="">Select service (optional)</option>
               <option value="website">Website</option>
               <option value="seo">SEO</option>
               <option value="ecommerce">E-commerce</option>
               <option value="video">Video Animation</option>
             </select>
           </div>
+
           <div className="mb-6">
             <input
               name="subject"
@@ -171,10 +177,10 @@ export default function ContactUsSection() {
               onChange={handleChange}
               type="text"
               className="w-full p-3 rounded-lg bg-[#2E2E2E] text-white border-2 border-[#DE2F04]"
-              placeholder="Subject"
-              required
+              placeholder="Subject (optional)"
             />
           </div>
+
           <div className="mb-6">
             <textarea
               name="message"
@@ -185,10 +191,11 @@ export default function ContactUsSection() {
               required
             />
           </div>
+
           <button
             type="submit"
             disabled={isSubmitting}
-            className="bg-[#DE2F04] text-white px-6 py-3 rounded-[75px] font-semibold border-2 border-[#DE2F04] bg-opacity-10 backdrop-blur-md shadow-lg hover:shadow-xl hover:bg-opacity-20 transition-all duration-300"
+            className="bg-[#DE2F04] text-white px-6 py-3 rounded-[75px] font-semibold border-2 border-[#DE2F04] bg-opacity-10 backdrop-blur-md shadow-lg hover:shadow-xl hover:bg-opacity-20 transition-all duration-300 disabled:opacity-60 disabled:cursor-not-allowed"
           >
             {isSubmitting ? "Sending..." : "Send Message →"}
           </button>

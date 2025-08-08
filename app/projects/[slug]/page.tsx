@@ -1,8 +1,11 @@
 import { notFound } from "next/navigation";
 import dynamic from "next/dynamic";
+import LivePreview from "@/components/LivePreview"; // <--- ADD THIS
 
 // Dynamically import the client-only BackButton
-const BackButton = dynamic(() => import("../[slug]/BackButton"), { ssr: false });
+const BackButton = dynamic(() => import("../[slug]/BackButton"), {
+  ssr: false,
+});
 
 const API_URL =
   "https://olive-peafowl-546702.hostingersite.com/wp-json/wp/v2/posts?slug=";
@@ -77,6 +80,16 @@ export default async function ProjectPage({
         )}
         {acf.conclusion && <Section title="Conclusion" text={acf.conclusion} />}
       </div>
+
+      {/* Live Website Preview (only if project_url exists) */}
+      {acf.project_url && (
+        <div className="w-full max-w-5xl mx-auto my-16 rounded-2xl overflow-hidden ">
+          <div className="text-2xl font-semibold mb-2 px-6 pt-6 text-[#DE2F04] text-center">
+            Live Website Preview
+          </div>
+          <LivePreview url={acf.project_url} />
+        </div>
+      )}
 
       {/* Back Button */}
       <div className="mt-16 text-center">
