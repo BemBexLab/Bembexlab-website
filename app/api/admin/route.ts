@@ -2,6 +2,9 @@
 import { NextResponse, NextRequest } from "next/server";
 import { prisma } from "@/lib/prisma";
 
+// Ensure this API runs on Node (not Edge) and never gets pre-rendered
+export const runtime = "nodejs";
+export const dynamic = "force-dynamic";
 export const revalidate = 0;
 
 /** GET /api/admin — list all contacts */
@@ -21,6 +24,7 @@ export async function GET() {
         submitted_at: true,
       },
     });
+
     return NextResponse.json({ contacts }, { status: 200 });
   } catch (err) {
     console.error("Admin contacts fetch error:", err);
