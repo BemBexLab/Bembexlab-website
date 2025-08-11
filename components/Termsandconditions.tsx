@@ -467,6 +467,46 @@ const TermsAndConditions = () => {
         <br />
         <section>
           <h2 className="text-3xl font-semibold mb-4 text-[#DE2F04]">
+            SMS/MMS Terms
+          </h2>
+          <ul className="text-white">
+            <li>
+              By submitting your phone number, you agree to receive SMS and MMS
+              messages from Bembex Lab for service-related purposes. These
+              messages may include booking confirmations, appointment reminders,
+              and customer support responses.
+            </li>
+            <br />
+            <li>
+              Message and data rates may apply depending on your mobile
+              provider.
+            </li>
+            <br />
+            <li>
+              You may cancel SMS services at any time by replying
+              &quot;STOP&quot; to any message we send. After you send
+              &quot;STOP,&quot; we will confirm your opt-out via SMS. To rejoin,
+              reply &quot;UNSTOP.&quot;
+            </li>
+            <br />
+            <li>
+              If you require help, reply &quot;HELP&quot; or contact us at{" "}
+              <a href="mailto:support@bembexlab.com" className="text-[#DE2F04]">
+                support@bembexlab.com
+              </a>
+              .
+            </li>
+
+            <br />
+            <li>
+              Mobile carriers are not liable for delayed or undelivered
+              messages.
+            </li>
+          </ul>
+        </section>
+        <br />
+        <section>
+          <h2 className="text-3xl font-semibold mb-4 text-[#DE2F04]">
             Validity of Refund
           </h2>
           <ul className="text-white">
@@ -524,7 +564,6 @@ const TermsAndConditions = () => {
             </li>
           </ul>
         </section>
-        
       </main>
     </>
   );
