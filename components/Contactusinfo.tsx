@@ -59,7 +59,10 @@ export default function ContactUsSection() {
   };
 
   return (
-    <section className="bg-[#0A0A11] py-16 px-6 sm:px-12 flex flex-col sm:flex-row items-center justify-between">
+    <section
+      id="contactform"
+      className="bg-[#0A0A11] py-16 px-6 sm:px-12 flex flex-col sm:flex-row items-center justify-between"
+    >
       {/* Left Side - Contact Information */}
       <div className="w-full sm:w-1/2 text-white ml-0 sm:ml-12 mb-12 sm:mb-0">
         <h1 className="text-3xl sm:text-4xl font-bold text-[#DE2F04] mb-4">

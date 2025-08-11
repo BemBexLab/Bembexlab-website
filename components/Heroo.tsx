@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -15,9 +16,11 @@ export default function Hero() {
           it’s boosting your SEO or sparking your social media, we’re here to
           help your brand shine. Let’s make something amazing together.
         </p>
-        <button className="px-6 sm:px-8 py-3 sm:py-4 text-white text-sm sm:text-base rounded-full border border-[#DE2F04] bg-[#DE2F04]/10 shadow-[9.138px_-9.138px_9.138px_0px_rgba(169,36,3,0.10)_inset,_-9.138px_9.138px_9.138px_0px_rgba(255,255,255,0.10)_inset] backdrop-blur-[9.137930870056152px] transition hover:bg-[#DE2F04]/20">
-          Book a call →
-        </button>
+        <Link href="/ContactUs">
+          <button className="bg-[#DE2F04] text-white px-6 py-3 rounded-full font-semibold border-2 border-[#DE2F04] bg-opacity-10 backdrop-blur-md shadow-lg hover:shadow-xl hover:bg-opacity-20 transition-all duration-300">
+            Book a call →
+          </button>
+        </Link>
       </div>
 
       {/* Right Section: Coin Image */}

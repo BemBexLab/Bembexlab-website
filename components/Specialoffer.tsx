@@ -8,7 +8,7 @@ export default function SpecialOfferSection() {
           <p className="text-white text-2xl sm:text-3xl font-semibold text-center sm:text-left mb-4 sm:mb-0">
             Grab it fast to get special price
           </p>
-          <button className="bg-gradient-to-r from-[#FF8C6A] to-[#FF4F34] text-white px-8 py-4 rounded-full font-semibold border-t-4 border-white bg-opacity-40">
+          <button className="bg-gradient-to-r from-[#FF8C6A] to-[#FF4F34] text-white px-8 py-4 rounded-full font-semibold border-t-2 border-white bg-opacity-40 hover:bg-gradient-to-r hover:from-[#FF4F34] hover:to-[#FF8C6A] transition-all duration-300">
             Book a call →
           </button>
         </div>

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function CareerSection() {
   return (
@@ -13,9 +14,11 @@ export default function CareerSection() {
           Explore, innovate, and excel with a career at Bembex Lab.
         </p>
 
-        <button className="bg-[#DE2F04] text-white px-6 py-3 rounded-full font-semibold border-2 border-[#DE2F04] bg-opacity-10 backdrop-blur-md shadow-lg hover:shadow-xl hover:bg-opacity-20 transition-all duration-300">
-          Book a call →
-        </button>
+        <Link href="/ContactUs">
+          <button className="bg-[#DE2F04] text-white px-6 py-3 rounded-full font-semibold border-2 border-[#DE2F04] bg-opacity-10 backdrop-blur-md shadow-lg hover:shadow-xl hover:bg-opacity-20 transition-all duration-300">
+            Book a call →
+          </button>
+        </Link>
       </div>
 
       {/* Right Side - Image */}
