@@ -6,7 +6,7 @@ import Image from "next/image";
 const testimonials = [
   {
     id: 1,
-    name: "Samantha Milner",
+    name: "Olivia James",
     company: "Mindful LLC",
     message:
       "We now have a fantastic website that perfectly encapsulates the essence of our company thanks to them. Their service has exceeded all of our expectations.",
@@ -14,7 +14,7 @@ const testimonials = [
   },
   {
     id: 2,
-    name: "Emily Tran",
+    name: "Daniel Lee",
     company: "Glow Wellness",
     message:
       "They understood our brand perfectly. The design is stunning and the user experience is flawless. Highly recommended!",
@@ -22,7 +22,7 @@ const testimonials = [
   },
   {
     id: 3,
-    name: "Daniel Lee",
+    name: "Emily Tran",
     company: "NextGen Corp",
     message:
       "We're incredibly impressed. Their team was professional, creative, and fast. They really care about delivering quality.",
@@ -30,7 +30,7 @@ const testimonials = [
   },
   {
     id: 4,
-    name: "Olivia James",
+    name: "Samantha Milner",
     company: "Luxe Living",
     message:
       "The final result was better than we imagined. They exceeded every expectation with their design and attention to detail.",
