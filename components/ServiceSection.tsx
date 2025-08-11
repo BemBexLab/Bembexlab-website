@@ -168,7 +168,7 @@ const ServicesSection = () => {
                 <AnimatePresence>
                   {activeIndex === i && (
                     <motion.div
-                      className="absolute left-0 top-0 w-full h-full -z-10 sm-w-[100px]"
+                      className="absolute left-0 top-0 max-[416px]:w-4/6 max-[639px]:w-5/6 sm:w-full h-full -z-10 sm-w-[100px]"
                       initial={{ opacity: 0, x: -100, y: -40, rotate: -15 }}
                       animate={{ opacity: 1, x: 0, y: 0, rotate: 0 }}
                       exit={{ opacity: 0, x: -100, y: -40, rotate: -15 }}
