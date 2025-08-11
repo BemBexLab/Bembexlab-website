@@ -10,7 +10,7 @@ const ROUTE_CATEGORIES = [
   "SHOPIFY",
   "WORDPRESS",
   "FIGMA DESIGN",
-  "UI UX DESIGN",
+  // "UI UX DESIGN",
 ];
 
 const categories = [...ROUTE_CATEGORIES, ...MODAL_CATEGORIES];
@@ -53,7 +53,8 @@ const ProjectCardGrid = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const res = await fetch("/api/posts", { cache: "no-store" });
+        const ts = Date.now();
+        const res = await fetch(`/api/posts?ts=${ts}`, { cache: "no-store" });
         const data = await res.json();
         const projectPosts = data.filter(
           (post: Post) => post.acf?.project_image?.url && post.slug
@@ -63,9 +64,9 @@ const ProjectCardGrid = () => {
         console.error("Error fetching posts", err);
       }
     };
-
     fetchPosts();
   }, []);
+
 
   const isFigmaCard = (post: Post) => {
     const cat = post.acf?.catogary;

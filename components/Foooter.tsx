@@ -97,9 +97,14 @@ const Footer = () => {
                 className="w-5 h-5"
               />
             </div>
-            <span className="text-white font-medium text-sm sm:text-[17px]">
-              +92(314)-2518727
-            </span>
+            <div>
+              <div className="text-white font-medium text-sm sm:text-[17px]">
+                +1 470-469-7096
+              </div>
+              <div className="text-white font-medium text-sm sm:text-[17px]">
+                +92 310 6411092
+              </div>
+            </div>
           </div>
 
           {/* Email */}
@@ -136,9 +141,9 @@ const Footer = () => {
               <img src="/Group.png" alt="Location" className="w-5 h-5" />
             </div>
             <div className="text-white font-medium text-sm sm:text-[17px] leading-snug break-words">
-              68 CIRCULAR ROAD, #02-01,
+              1014 Garner Rd SW, Lilburn,
               <br className="block sm:hidden" />
-              SINGAPORE 049422
+              GA 30047, USA
             </div>
           </div>
         </div>

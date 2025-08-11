@@ -49,15 +49,21 @@ const HeroWithStats = () => {
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
             <Link href="/ContactUs">
-              <button className="flex items-center justify-center gap-3 bg-[#1a1a1a]/60 backdrop-blur-md border border-red-600 text-white px-6 py-3 rounded-full hover:brightness-110 transition shadow-[0_0_12px_#ff1e00aa] text-sm sm:text-base min-h-[48px]">
+              <button
+                className="flex items-center justify-center gap-3 bg-[#1a1a1a]/60 backdrop-blur-md border border-red-600 text-white px-6 py-3 rounded-full 
+    hover:brightness-110  transition-all duration-300 ease-in-out 
+    shadow-[0_0_12px_#ff1e00aa] hover:shadow-[0_0_20px_#ff1e00dd] text-sm sm:text-base min-h-[48px] group"
+              >
                 <span>Book a call</span>
-                <span className="text-lg">→</span>
+                <span className="text-lg transform transition-transform duration-300 group-hover:translate-x-1">
+                  →
+                </span>
               </button>
             </Link>
 
             <Link href="/portfolio">
               <button className="flex items-center justify-center gap-3 text-white px-6 py-3 rounded-full transition text-sm sm:text-base min-h-[48px]">
-                <span className="group w-12 h-12 flex items-center justify-center border border-[#ff4500] rounded-full hover:bg-[#DE2F04]">
+                <span className="group w-12 h-12 flex items-center justify-center border border-[#ff4500] rounded-full hover:bg-[#DE2F04] transition-all duration-300">
                   <FaPlay
                     size={10}
                     className="text-[#ff4500] group-hover:text-white"

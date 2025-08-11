@@ -163,7 +163,7 @@ const GalleryCarousel = () => {
                 prev === 0 ? posts.length - 1 : prev - 1
               )
             }
-            className="bg-black/60 hover:bg-black/80 text-white p-3 rounded-full transition-all duration-300"
+            className="bg-[#ff4d2d]/90 hover:bg-black/80 text-white p-3 rounded-full transition-all duration-300"
           >
             ←
           </button>
@@ -175,7 +175,7 @@ const GalleryCarousel = () => {
                 prev === posts.length - 1 ? 0 : prev + 1
               )
             }
-            className="bg-black/60 hover:bg-black/80 text-white p-3 rounded-full transition-all duration-300"
+            className="bg-[#ff4d2d]/90 hover:bg-black/80 text-white p-3 rounded-full transition-all duration-300"
           >
             →
           </button>
@@ -222,7 +222,7 @@ const GalleryCarousel = () => {
           })}
         </div>
 
-        <div className="flex justify-center gap-2 mt-6">
+        {/* <div className="flex justify-center gap-2 mt-6">
           {posts.map((_, index) => (
             <button
               key={index}
@@ -234,7 +234,7 @@ const GalleryCarousel = () => {
               }`}
             />
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );
