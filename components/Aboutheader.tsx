@@ -8,7 +8,7 @@ const AboutHeader = () => {
     <section className="min-h-screen bg-[#0A0A11] text-white px-4 sm:px-6 lg:px-20 pt-20 lg:pt-24 pb-24 flex items-center">
       <div className="w-full max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
         {/* ✅ Left Side: Text Content */}
-        <div className="text-left">
+        <div className="text-left max-md:mt-8">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
             <span className="bg-gradient-to-r from-[#ffb199] to-[#ff0844] text-transparent bg-clip-text">
               Passionate

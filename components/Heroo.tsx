@@ -3,9 +3,9 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative w-full min-h-screen bg-[#0A0A11] text-white flex flex-col-reverse md:flex-row items-center justify-between px-4 sm:px-8 md:px-20 py-12 gap-12 md:gap-0">
+    <section className="relative w-full min-h-screen bg-[#0A0A11] text-white flex flex-col md:flex-row items-center justify-between px-4 sm:px-8 md:px-20 py-12 gap-12 md:gap-0">
       {/* Left Section: Text Content */}
-      <div className="w-full md:w-1/2 text-center md:text-left">
+      <div className="w-full md:w-1/2 text-center md:text-left max-md:mt-14">
         <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold leading-tight mb-4">
           Custom Solutions.
           <br />
@@ -24,7 +24,7 @@ export default function Hero() {
       </div>
 
       {/* Right Section: Coin Image */}
-      <div className="relative w-[250px] sm:w-[300px] md:w-[350px] h-[250px] sm:h-[300px] md:h-[350px] flex-shrink-0">
+      <div className="relative w-[250px] sm:w-[300px] md:w-[350px] lg:w-[550px] xl:w-[650px] h-[250px] sm:h-[300px] md:h-[350px] lg:h-[550px] xl:h-[650px]  flex-shrink-0">
         <Image
           src="/Coin3DModel1.png"
           alt="Large Coin"

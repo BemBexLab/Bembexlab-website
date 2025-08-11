@@ -14,7 +14,7 @@ export default function PackagePage() {
     <main className="w-full overflow-hidden">
       <Heroo/>
       <Specialoffer/>
-      <Price/>
+      {/* <Price/> */}
       <PricingCard/>
       <Foooter/>
     </main>
