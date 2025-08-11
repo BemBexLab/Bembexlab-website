@@ -98,12 +98,18 @@ const Footer = () => {
               />
             </div>
             <div>
-              <div className="text-white font-medium text-sm sm:text-[17px]">
+              <a
+                href="tel:+14704697096"
+                className="text-white font-medium text-sm sm:text-[17px] block"
+              >
                 +1 470-469-7096
-              </div>
-              <div className="text-white font-medium text-sm sm:text-[17px]">
+              </a>
+              <a
+                href="tel:+923106411092"
+                className="text-white font-medium text-sm sm:text-[17px] block"
+              >
                 +92 310 6411092
-              </div>
+              </a>
             </div>
           </div>
 
@@ -123,9 +129,12 @@ const Footer = () => {
                 className="w-5 h-5"
               />
             </div>
-            <span className="text-white font-medium text-sm sm:text-[17px]">
+            <a
+              href="mailto:hr@bembexlab.com"
+              className="text-white font-medium text-sm sm:text-[17px]"
+            >
               hr@bembexlab.com
-            </span>
+            </a>
           </div>
 
           {/* Location */}
@@ -140,11 +149,16 @@ const Footer = () => {
             >
               <img src="/Group.png" alt="Location" className="w-5 h-5" />
             </div>
-            <div className="text-white font-medium text-sm sm:text-[17px] leading-snug break-words">
+            <a
+              href="https://www.google.com/maps?q=1014+Garner+Rd+SW,+Lilburn,+GA+30047,+USA"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white font-medium text-sm sm:text-[17px] leading-snug break-words hover:underline"
+            >
               1014 Garner Rd SW, Lilburn,
               <br className="block sm:hidden" />
               GA 30047, USA
-            </div>
+            </a>
           </div>
         </div>
 

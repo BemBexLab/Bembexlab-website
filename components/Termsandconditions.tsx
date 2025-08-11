@@ -28,10 +28,10 @@ const TermsAndConditions = () => {
             posting. You should visit this web page periodically to review the
             Terms and Conditions, because they are binding on you. In these
             Terms and Conditions, all services provided by and related to Bembex
-            Lab and all text, images, photographs, user interface, "look" and
-            "feel", data and other content (including, without limitation, the
+            Lab and all text, images, photographs, user interface, &quot;look&quot; and
+            &quot;feel&quot;, data and other content (including, without limitation, the
             selection, coordination and arrangement of such content) are
-            sometimes referred to as the "Web Site" and/or "Service".
+            sometimes referred to as the &quot;Web Site&quot; and/or &quot;Service&quot;.
           </p>
         </section>
 
@@ -66,12 +66,12 @@ const TermsAndConditions = () => {
             <li>
               Description. Bembex Lab Service is an online service where
               individuals or entities that have signed up with Bembex Lab as
-              clients (each, a "Client") can post specific assignments and
+              clients (each, a &quot;Client&quot;) can post specific assignments and
               project descriptions, including illustrative samples or other
-              media (each, a "Creative Brief"), revise those Creative Briefs
-              (each, a "Revision Brief") and obtain responses (each, a
-              "Response") to those Creative or Revision Briefs from design
-              experts retained by Bembex Lab ("Members"). Bembex Lab will
+              media (each, a &quot;Creative Brief&quot;), revise those Creative Briefs
+              (each, a &quot;Revision Brief&quot;) and obtain responses (each, a
+              &quot;Response&quot;) to those Creative or Revision Briefs from design
+              experts retained by Bembex Lab (&quot;Members&quot;). Bembex Lab will
               provide you, as the Client, the Service according to the Package
               you have chosen as detailed in section 1(e) below. Your Responses
               will be created iteratively through a drafting cycle of Creative
@@ -86,7 +86,7 @@ const TermsAndConditions = () => {
               Creative Briefs to the Web Site, including providing samples
               illustrating your Creative Brief and any relevant deadlines. For
               each Response to a Creative Brief that you want to receive, a term
-              sheet (a "Term Sheet") will be generated that will contain, and be
+              sheet (a &quot;Term Sheet&quot;) will be generated that will contain, and be
               subject to, the terms and conditions you have established for the
               Creative or Revision Brief. Bembex Lab is under no obligation to
               review a Creative or Revision Brief or Term Sheet for any purpose,
@@ -159,7 +159,7 @@ const TermsAndConditions = () => {
           <ul className="text-white">
             <li>
               Your User Identity. When you register as a Client, you will create
-              a user identity (your "User Identity"), which will be your
+              a user identity (your &quot;User Identity&quot;), which will be your
               identity for purposes of interacting with other users through the
               Web Site. Your User Identity will include certain personal
               information, such as, the industry in which you operate. However,
@@ -180,7 +180,7 @@ const TermsAndConditions = () => {
               identification or password, or (ii) any unauthorized use of your
               registration identification or password or of the Web Site. In the
               event of such loss, theft, or unauthorized use, Bembex Lab may
-              impose on you, at Bembex Lab ' sole discretion, additional
+              impose on you, at Bembex Lab &apos; sole discretion, additional
               security obligations.
             </li>
             <br />
@@ -204,7 +204,7 @@ const TermsAndConditions = () => {
               Creative and Response Briefs. Upon submission of a Creative or
               Response Brief or any other information or media provided by you
               in connection with your use of the Service (collectively, the
-              "Client Information"), Bembex Lab and its agents shall have all
+              &quot;Client Information&quot;), Bembex Lab and its agents shall have all
               rights and licenses necessary to use such Client Information for
               the purpose of obtaining Responses and for archival purposes. Each
               Member to whom your project is made available has the right to
@@ -229,7 +229,7 @@ const TermsAndConditions = () => {
             <li>
               Rights of Clients. Subject to your compliance with these Terms and
               Conditions, you shall own the final the Response composition
-              provided to you by Bembex Lab. (the "Final Product"). You shall
+              provided to you by Bembex Lab. (the &quot;Final Product&quot;). You shall
               not, however, own any materials, media or other content generated
               during any revision cycles leading up to the Final Product, and
               Bembex Lab lab expressly reserves all right, title and interest in
@@ -253,7 +253,7 @@ const TermsAndConditions = () => {
             <li>
               Bembex LAB. intends to use commercially reasonable efforts to
               follow its privacy policy; as such privacy policy may be changed
-              from time to time at Bembex Lab ' sole discretion. Notwithstanding
+              from time to time at Bembex Lab &apos; sole discretion. Notwithstanding
               the foregoing, Bembex Lab cannot and does not assume any
               responsibility or liability for any information submitted to the
               Web Site or for the use or misuse of any information submitted by
@@ -343,7 +343,7 @@ const TermsAndConditions = () => {
             </li>
             <li>
               (c) take any action that imposes an unreasonable or
-              disproportionately large load on the Web Site's infrastructure;
+              disproportionately large load on the Web Site&apos;s infrastructure;
             </li>
             <li>
               (d) use any device, software or routine to interfere or attempt to
@@ -383,8 +383,8 @@ const TermsAndConditions = () => {
             <li>
               (iii) attempting to interfere with service to any user, host or
               network, including, without limitation, by way of submitting a
-              virus to, or overloading, "flooding", "spamming", "mail bombing"
-              or "crashing", the Web Site;
+              virus to, or overloading, &quot;flooding&quot;, &quot;spamming&quot;, &quot;mail bombing&quot;
+              or &quot;crashing&quot;, the Web Site;
             </li>
             <li>
               (iv) sending unsolicited email to any user of the Web Site,
@@ -554,7 +554,7 @@ const TermsAndConditions = () => {
               your use of a Response will infringe any statutory or third-party
               intellectual property, privacy or publicity rights. Photos /
               Images: Bembex Lab shall not be responsible for any use of photos
-              that are not royalty free. It is the clients' responsibility to
+              that are not royalty free. It is the clients&apos; responsibility to
               purchase and pay for all rights to use any photos, images,
               graphics, icons, logos, and/or designs for any designs created by
               Bembex Lab for the client. This includes websites, website

@@ -82,7 +82,15 @@ export default function ContactUsSection() {
               className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
             />
           </div>
-          <span className="text-lg">+1 470-469-7096 | +92 310 6411092</span>
+          <span className="text-lg">
+            <a href="tel:+14704697096" className="hover:underline">
+              +1 470-469-7096
+            </a>{" "}
+            |{" "}
+            <a href="tel:+923106411092" className="hover:underline">
+              +92 310 6411092
+            </a>
+          </span>
         </div>
 
         <div className="flex items-center space-x-6 mb-6">
@@ -95,7 +103,9 @@ export default function ContactUsSection() {
               className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
             />
           </div>
-          <span className="text-lg">hr@bembexlab.com</span>
+          <a href="mailto:hr@bembexlab.com" className="text-lg hover:underline">
+            hr@bembexlab.com
+          </a>
         </div>
 
         <div className="flex items-center space-x-6 mb-6">
@@ -108,9 +118,14 @@ export default function ContactUsSection() {
               className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
             />
           </div>
-          <span className="text-lg">
+          <a
+            href="https://www.google.com/maps?q=1014+Garner+Rd+SW,+Lilburn,+GA+30047,+USA"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-lg hover:underline"
+          >
             1014 Garner Rd SW, Lilburn, GA 30047, USA
-          </span>
+          </a>
         </div>
       </div>
 
@@ -170,6 +185,9 @@ export default function ContactUsSection() {
               <option value="seo">SEO</option>
               <option value="ecommerce">E-commerce</option>
               <option value="video">Video Animation</option>
+              <option value="video">UIUX</option>
+              <option value="video">Digital Marketing</option>
+              <option value="video">Graphic Designing</option>
             </select>
           </div>
 
