@@ -86,10 +86,10 @@ export default function ContactUsSection() {
             <a href="tel:+14704697096" className="hover:underline">
               +1 470-469-7096
             </a>{" "}
-            |{" "}
+            {/* |{" "}
             <a href="tel:+923106411092" className="hover:underline">
               +92 310 6411092
-            </a>
+            </a> */}
           </span>
         </div>
 

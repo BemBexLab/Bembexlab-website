@@ -1,5 +1,4 @@
-// app/about/page.tsx
-"use client";
+
 
 import AboutHeader from "@/components/Aboutheader";
 import AboutIntro from "@/components/AboutIntro";

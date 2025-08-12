@@ -1,4 +1,4 @@
-"use client";
+
 
 import Foooter from "@/components/Foooter";
 import Privacy from "@/components/Privacy";

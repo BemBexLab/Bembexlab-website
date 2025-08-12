@@ -1,6 +1,3 @@
-// app/portfolio/page.tsx
-"use client";
-
 
 import Heroo from "@/components/Heroo";
 import Specialoffer from "@/components/Specialoffer";

@@ -1,5 +1,4 @@
-// app/portfolio/page.tsx
-"use client";
+
 
 import Clients from "@/components/Clients";
 import PortfolioGallery from "@/components/PortfolioGallery";

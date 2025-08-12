@@ -104,12 +104,12 @@ const Footer = () => {
               >
                 +1 470-469-7096
               </a>
-              <a
+              {/* <a
                 href="tel:+923106411092"
                 className="text-white font-medium text-sm sm:text-[17px] block hover:underline"
               >
                 +92 310 6411092
-              </a>
+              </a> */}
             </div>
           </div>
 
