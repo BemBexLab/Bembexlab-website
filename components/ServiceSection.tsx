@@ -169,9 +169,9 @@ const ServicesSection = () => {
                   {activeIndex === i && (
                     <motion.div
                       className="absolute left-0 top-0 max-[416px]:w-4/6 max-[639px]:w-5/6 sm:w-full h-full -z-10 sm-w-[100px]"
-                      initial={{ opacity: 0, x: -100, y: -40, rotate: -15 }}
+                      initial={{ opacity: 0, x: -100, y: -90, rotate: -15 }}
                       animate={{ opacity: 1, x: 0, y: 0, rotate: 0 }}
-                      exit={{ opacity: 0, x: -100, y: -40, rotate: -15 }}
+                      exit={{ opacity: 0, x: -100, y: -90, rotate: -15 }}
                       transition={{ duration: 0.5, ease: "easeInOut" }}
                     >
                       <div className="w-full h-full rounded-[115px] border border-[#DE2F04] bg-[rgba(222,47,4,0.10)] backdrop-blur-[9.13px] shadow-[9.138px_-9.138px_9.138px_0px_rgba(169,36,3,0.10)_inset,_-9.138px_9.138px_9.138px_0px_rgba(255,255,255,0.10)_inset]" />

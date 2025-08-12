@@ -100,13 +100,13 @@ const Footer = () => {
             <div>
               <a
                 href="tel:+14704697096"
-                className="text-white font-medium text-sm sm:text-[17px] block"
+                className="text-white font-medium text-sm sm:text-[17px] block hover:underline"
               >
                 +1 470-469-7096
               </a>
               <a
                 href="tel:+923106411092"
-                className="text-white font-medium text-sm sm:text-[17px] block"
+                className="text-white font-medium text-sm sm:text-[17px] block hover:underline"
               >
                 +92 310 6411092
               </a>
@@ -131,7 +131,7 @@ const Footer = () => {
             </div>
             <a
               href="mailto:hr@bembexlab.com"
-              className="text-white font-medium text-sm sm:text-[17px]"
+              className="text-white font-medium text-sm sm:text-[17px] hover:underline"
             >
               hr@bembexlab.com
             </a>
