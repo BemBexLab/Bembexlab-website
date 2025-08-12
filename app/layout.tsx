@@ -7,9 +7,42 @@ import LayoutWrapper from "@/components/LayoutWrapper"; // Import the new wrappe
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Bembex lab",
+  title: "Bembex Lab",
   description:
     "Elevate your online presence with our expert web design and development agency. We build fast, modern, responsive websites that drive results for startups, businesses, and brands.",
+  // Helps Next make absolute URLs from relative ones below
+  metadataBase: new URL("https://bembexlab.vercel.app"),
+
+  // ✅ Proper icons (avoid spaces in filenames)
+  icons: {
+    icon: "/Bambex lab logo Text white 1 (1).png",
+    apple: "/Bambex lab logo Text white 1 (1).png",
+  },
+
+  // ✅ Open Graph for Facebook/LinkedIn/Slack etc.
+  openGraph: {
+    type: "website",
+    url: "https://bembexlab.vercel.app/",
+    siteName: "Bembex Lab",
+    title: "Bembex Lab — Web Design & Development",
+    description: "Fast, modern, responsive websites that drive results.",
+    images: [
+      {
+        url: "/Bambex lab logo Text white 1 (1).png", // resolves to absolute via metadataBase
+        width: 1200,
+        height: 630,
+        alt: "Bembex Lab — web design & development",
+      },
+    ],
+  },
+
+  // ✅ Twitter Card
+  twitter: {
+    card: "summary_large_image",
+    title: "Bembex Lab — Web Design & Development",
+    description: "Fast, modern, responsive websites that drive results.",
+    images: ["/Bambex lab logo Text white 1 (1).png"],
+  },
 };
 
 export default function RootLayout({
@@ -19,13 +52,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
+      {/* <head>
         <link
           rel="icon"
           href="Bambex lab logo Text white 1 (1).png"
           sizes="any"
         />
-      </head>
+      </head> */}
       <body
         className={`${inter.className} bg-black text-white overflow-x-hidden`}
       >
