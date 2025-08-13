@@ -16,7 +16,9 @@ export default function BackButton() {
   return (
     <button
       onClick={handleBackClick}
-      className="inline-block bg-[#DE2F04] hover:bg-white hover:text-black transition-colors duration-300 text-white font-medium px-6 py-3 rounded-full"
+      className="flex items-center justify-center gap-3 bg-[#1a1a1a]/60 backdrop-blur-md border border-red-600 text-white px-6 py-3 rounded-full 
+    hover:brightness-110  transition-all duration-300 ease-in-out 
+    shadow-[0_0_12px_#ff1e00aa] hover:shadow-[0_0_20px_#ff1e00dd] text-sm sm:text-base min-h-[48px] group"
     >
       ← Back to Portfolio
     </button>
