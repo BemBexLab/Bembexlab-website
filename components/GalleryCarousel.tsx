@@ -134,14 +134,9 @@ const GalleryCarousel = () => {
     };
   }, [posts.length]);
 
-  if (posts.length === 0) {
-    return (
-      <div className="text-white text-center py-10">Loading Projects...</div>
-    );
-  }
-
   return (
     <section className="w-full py-20 px-4 sm:px-6 md:px-8 max-w-7xl mx-auto">
+      {/* Title section rendered immediately */}
       <p className="text-[#ff4d2d] font-semibold mb-2">Our Portfolio</p>
       <h2 className="text-white text-3xl sm:text-4xl md:text-5xl font-bold mb-10 leading-tight">
         Our{" "}
@@ -150,92 +145,83 @@ const GalleryCarousel = () => {
         </span>
       </h2>
 
-      <div
-        className="relative w-full overflow-x-hidden"
-        onMouseEnter={() => setIsHovering(true)}
-        onMouseLeave={() => setIsHovering(false)}
-      >
-        {/* Navigation Buttons */}
-        <div className="absolute top-1/2 left-2 z-10 -translate-y-1/2">
-          <button
-            onClick={() =>
-              setActiveIndex((prev) =>
-                prev === 0 ? posts.length - 1 : prev - 1
-              )
-            }
-            className="bg-[#ff4d2d]/90 hover:bg-black/80 text-white p-3 rounded-full transition-all duration-300"
-          >
-            ←
-          </button>
-        </div>
-        <div className="absolute top-1/2 right-2 z-10 -translate-y-1/2">
-          <button
-            onClick={() =>
-              setActiveIndex((prev) =>
-                prev === posts.length - 1 ? 0 : prev + 1
-              )
-            }
-            className="bg-[#ff4d2d]/90 hover:bg-black/80 text-white p-3 rounded-full transition-all duration-300"
-          >
-            →
-          </button>
-        </div>
-
-        {/* Carousel */}
+      {/* Conditional rendering for posts */}
+      {posts.length === 0 ? (
+        <div className="text-white text-center py-10">Loading Projects...</div>
+      ) : (
         <div
-          ref={carouselRef}
-          className="flex gap-6 overflow-x-hidden scrollbar-hide snap-x snap-mandatory py-4 px-2 cursor-grab active:cursor-grabbing select-none"
+          className="relative w-full overflow-x-hidden"
+          onMouseEnter={() => setIsHovering(true)}
+          onMouseLeave={() => setIsHovering(false)}
         >
-          {[...posts, ...posts].map((post, index) => {
-            const imageUrl = post.acf?.project_image?.url || "/default.jpg";
-            const actualIndex = index % posts.length;
-
-            return (
-              <Link
-                key={`${post.id}-${index}`}
-                href={`/projects/${post.slug}`}
-                ref={(el) => {
-                  if (actualIndex === index) {
-                    itemsRef.current[actualIndex] = el;
-                  }
-                }}
-                className={`relative min-w-[320px] sm:min-w-[360px] md:min-w-[400px] max-w-[420px] h-[260px] sm:h-[300px] md:h-[340px] 
-                  bg-black rounded-2xl overflow-hidden shadow-xl border transition-all duration-300 flex-shrink-0 snap-center
-                  ${
-                    actualIndex === activeIndex
-                      ? "scale-105 border-[#DE2F04]"
-                      : "scale-95 opacity-80 border-white/10"
-                  } hover:scale-105 hover:opacity-100 hover:border-[#DE2F04]/60`}
-              >
-                <img
-                  src={imageUrl}
-                  alt={post.title.rendered}
-                  className="w-full h-full object-cover object-center transition-transform duration-700 hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-                  <span className="text-white font-medium text-lg text-center">
-                    {post.title.rendered}
-                  </span>
-                </div>
-              </Link>
-            );
-          })}
-        </div>
-
-        {/* <div className="flex justify-center gap-2 mt-6">
-          {posts.map((_, index) => (
+          {/* Navigation Buttons */}
+          <div className="absolute top-1/2 left-2 z-10 -translate-y-1/2">
             <button
-              key={index}
-              onClick={() => setActiveIndex(index)}
-              className={`h-2 rounded-full transition-all duration-300 ${
-                index === activeIndex
-                  ? "w-8 bg-[#DE2F04]"
-                  : "w-2 bg-white/30 hover:bg-white/50"
-              }`}
-            />
-          ))}
-        </div> */}
-      </div>
+              onClick={() =>
+                setActiveIndex((prev) =>
+                  prev === 0 ? posts.length - 1 : prev - 1
+                )
+              }
+              className="bg-[#ff4d2d]/90 hover:bg-black/80 text-white p-3 rounded-full transition-all duration-300"
+            >
+              ←
+            </button>
+          </div>
+          <div className="absolute top-1/2 right-2 z-10 -translate-y-1/2">
+            <button
+              onClick={() =>
+                setActiveIndex((prev) =>
+                  prev === posts.length - 1 ? 0 : prev + 1
+                )
+              }
+              className="bg-[#ff4d2d]/90 hover:bg-black/80 text-white p-3 rounded-full transition-all duration-300"
+            >
+              →
+            </button>
+          </div>
+
+          {/* Carousel */}
+          <div
+            ref={carouselRef}
+            className="flex gap-6 overflow-x-hidden scrollbar-hide snap-x snap-mandatory py-4 px-2 cursor-grab active:cursor-grabbing select-none"
+          >
+            {[...posts, ...posts].map((post, index) => {
+              const imageUrl = post.acf?.project_image?.url || "/default.jpg";
+              const actualIndex = index % posts.length;
+
+              return (
+                <Link
+                  key={`${post.id}-${index}`}
+                  href={`/projects/${post.slug}`}
+                  ref={(el) => {
+                    if (actualIndex === index) {
+                      itemsRef.current[actualIndex] = el;
+                    }
+                  }}
+                  className={`relative min-w-[320px] sm:min-w-[360px] md:min-w-[400px] max-w-[420px] h-[260px] sm:h-[300px] md:h-[340px] 
+                    bg-black rounded-2xl overflow-hidden shadow-xl border transition-all duration-300 flex-shrink-0 snap-center
+                    ${
+                      actualIndex === activeIndex
+                        ? "scale-105 border-[#DE2F04]"
+                        : "scale-95 opacity-80 border-white/10"
+                    } hover:scale-105 hover:opacity-100 hover:border-[#DE2F04]/60`}
+                >
+                  <img
+                    src={imageUrl}
+                    alt={post.title.rendered}
+                    className="w-full h-full object-cover object-center transition-transform duration-700 hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                    <span className="text-white font-medium text-lg text-center">
+                      {post.title.rendered}
+                    </span>
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
+        </div>
+      )}
     </section>
   );
 };
