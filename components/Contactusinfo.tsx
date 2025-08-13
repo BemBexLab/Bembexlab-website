@@ -181,13 +181,14 @@ export default function ContactUsSection() {
               className="w-full p-3 rounded-lg bg-[#2E2E2E] text-white border-2 border-[#DE2F04]"
             >
               <option value="">Select service (optional)</option>
-              <option value="website">Website</option>
+              <option value="website">Website Design</option>
               <option value="seo">SEO</option>
               <option value="ecommerce">E-commerce</option>
               <option value="video">Video Animation</option>
-              <option value="video">UIUX</option>
+              <option value="video">Logo</option>
               <option value="video">Digital Marketing</option>
-              <option value="video">Graphic Designing</option>
+              <option value="video">Branding</option>
+              <option value="video">Maintenance</option>
             </select>
           </div>
 

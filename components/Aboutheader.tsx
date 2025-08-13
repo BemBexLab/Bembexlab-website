@@ -26,7 +26,7 @@ const AboutHeader = () => {
             businesses stand out in the digital world.
           </p>
 
-          <Link href="/ContactUs">
+          <Link href="/contact-us">
             <button className="rounded-full px-5 sm:px-6 py-3 text-white text-sm bg-[#1a1a1a]/60 border border-[#ff4d2d] backdrop-blur-md hover:brightness-110 transition shadow-[0_0_12px_#ff1e00aa]">
               Book a call →
             </button>

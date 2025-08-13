@@ -16,7 +16,7 @@ export default function Hero() {
           it’s boosting your SEO or sparking your social media, we’re here to
           help your brand shine. Let’s make something amazing together.
         </p>
-        <Link href="/ContactUs">
+        <Link href="/contact-us">
           <button className="bg-[#DE2F04] text-white px-6 py-3 rounded-full font-semibold border-2 border-[#DE2F04] bg-opacity-10 backdrop-blur-md shadow-lg hover:shadow-xl hover:bg-opacity-20 transition-all duration-300">
             Book a call →
           </button>

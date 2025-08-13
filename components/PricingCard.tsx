@@ -120,7 +120,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
       <p className="text-neutral-400 mb-4 sm:mb-6 md:mb-8 text-xs sm:text-sm md:text-base relative z-10">
         Up to{" "}
         <span className="text-[#DE2F04] font-medium">{referralDiscount}</span>{" "}
-        referral AAR
+        Discount
       </p>
 
       <div className="mb-2 text-neutral-300 text-xs sm:text-sm md:text-base font-medium relative z-10">
@@ -159,7 +159,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
           ))}
         </div>
       </div>
-      <Link href="/ContactUs" className="mt-auto relative z-10">
+      <Link href="/contact-us" className="mt-auto relative z-10">
         <button
           className="w-full text-white py-2 sm:py-3 px-4 rounded-full flex items-center justify-center text-xs sm:text-sm md:text-base border border-[#DE2F04] backdrop-blur-[9.14px] shadow-[9.138px_-9.138px_9.138px_rgba(169,36,3,0.10)_inset,-9.138px_9.138px_9.138px_rgba(255,255,255,0.10)_inset] transition-colors duration-300"
           style={{
@@ -192,7 +192,7 @@ const PricingCards: React.FC = () => {
       title: "Basic Website Package",
       price: "$199",
       originalPrice: "$299",
-      referralDiscount: "50%",
+      referralDiscount: "30%",
       features: [
         { text: "2 Stock Photos" },
         { text: "3 Page Website" },
@@ -217,7 +217,7 @@ const PricingCards: React.FC = () => {
       title: "Standard Website Package",
       price: "$599",
       originalPrice: "$799",
-      referralDiscount: "45%",
+      referralDiscount: "25%",
       features: [
         { text: "6 Unique Pages Website" },
         { text: "5 Stock images" },
@@ -243,7 +243,7 @@ const PricingCards: React.FC = () => {
       title: "Premium Website Package",
       price: "$875",
       originalPrice: "$1250",
-      referralDiscount: "45%",
+      referralDiscount: "30%",
       features: [
         { text: "Upto 10 Unique Pages Website" },
         { text: "Conceptual and Dynamic Website" },
@@ -279,7 +279,7 @@ const PricingCards: React.FC = () => {
       title: "Basic E-commerce Package",
       price: "$999",
       originalPrice: "$1700",
-      referralDiscount: "50%",
+      referralDiscount: "30%",
       features: [
         { text: "Upto 15 Unique Pages Website" },
         { text: "Conceptual and Dynamic Website" },
@@ -314,7 +314,7 @@ const PricingCards: React.FC = () => {
       title: "Standard E-commerce Package",
       price: "$1750",
       originalPrice: "$2500",
-      referralDiscount: "45%",
+      referralDiscount: "30%",
       features: [
         { text: "Unlimited Unique Pages Website" },
         { text: "Conceptual and Dynamic Website" },
@@ -350,7 +350,7 @@ const PricingCards: React.FC = () => {
       title: "Premium E-commerce Package",
       price: "$2450",
       originalPrice: "$3500",
-      referralDiscount: "40%",
+      referralDiscount: "30%",
       features: [
         { text: "UNLIMITED Logo Design Concepts" },
         { text: "By 6 Award Winning Designers" },
@@ -484,7 +484,7 @@ const PricingCards: React.FC = () => {
       title: "Basic Animation Package",
       price: "$199",
       originalPrice: "$285",
-      referralDiscount: "50%",
+      referralDiscount: "30%",
       features: [
         { text: "Script" },
         { text: "Storyboard & Characters" },
@@ -499,7 +499,7 @@ const PricingCards: React.FC = () => {
       title: "Standard Animation Package",
       price: "$299",
       originalPrice: "$428",
-      referralDiscount: "45%",
+      referralDiscount: "30%",
       features: [
         { text: "Script" },
         { text: "Storyboard & Characters" },
@@ -515,7 +515,7 @@ const PricingCards: React.FC = () => {
       title: "Premium Animation Package",
       price: "$499",
       originalPrice: "$712",
-      referralDiscount: "40%",
+      referralDiscount: "30%",
       features: [
         { text: "Script" },
         { text: "Storyboard & Characters" },
@@ -535,7 +535,7 @@ const PricingCards: React.FC = () => {
       title: "Basic SEO Package",
       price: "$350",
       originalPrice: "$500",
-      referralDiscount: "50%",
+      referralDiscount: "30%",
       features: [
         { text: "Better Packages, Better Prices" },
         { text: "Domain Overview" },
@@ -571,7 +571,7 @@ const PricingCards: React.FC = () => {
       title: "Standard SEO Package",
       price: "$700",
       originalPrice: "$1000",
-      referralDiscount: "45%",
+      referralDiscount: "30%",
       features: [
         { text: "Prior Analysis" },
         { text: "Domain Overview" },
@@ -608,7 +608,7 @@ const PricingCards: React.FC = () => {
       title: "Premium SEO Package",
       price: "$1120",
       originalPrice: "$1620",
-      referralDiscount: "45%",
+      referralDiscount: "30%",
       features: [
         { text: "Prior Analysis" },
         { text: "Domain Overview" },
@@ -649,7 +649,7 @@ const PricingCards: React.FC = () => {
       title: "Basic Digital Marketing",
       price: "$699",
       originalPrice: "$999",
-      referralDiscount: "50%",
+      referralDiscount: "30%",
       features: [
         { text: "12/Month Unique Social Media Content Posting" },
         { text: "Social Media Analysis" },
@@ -667,7 +667,7 @@ const PricingCards: React.FC = () => {
       title: "Standard Digital Marketing",
       price: "$1050",
       originalPrice: "$1500",
-      referralDiscount: "45%",
+      referralDiscount: "30%",
       features: [
         { text: "20/Month Unique Social Media Content Posting" },
         { text: "Competitor Analysis" },
@@ -690,7 +690,7 @@ const PricingCards: React.FC = () => {
       title: "Premium Digital Marketing",
       price: "$1225",
       originalPrice: "$1750",
-      referralDiscount: "40%",
+      referralDiscount: "30%",
       features: [
         { text: "40/Month Unique Social Media Content Posting" },
         { text: "Competitor Analysis" },
@@ -714,7 +714,7 @@ const PricingCards: React.FC = () => {
       title: "Basic Logo Design Package",
       price: "$42",
       originalPrice: "$60",
-      referralDiscount: "50%",
+      referralDiscount: "30%",
       features: [
         { text: "2 Custom Logo Design Concepts" },
         { text: "1 Dedicated Designer" },
@@ -732,7 +732,7 @@ const PricingCards: React.FC = () => {
       title: "Standard Logo Design Package",
       price: "$73",
       originalPrice: "$105",
-      referralDiscount: "45%",
+      referralDiscount: "30%",
       features: [
         { text: "5 Custom Logo Design Concepts" },
         { text: "By 2 Designers" },
@@ -750,7 +750,7 @@ const PricingCards: React.FC = () => {
       title: "Premium Logo Design Package",
       price: "$115",
       originalPrice: "$165",
-      referralDiscount: "40%",
+      referralDiscount: "30%",
       features: [
         { text: "UNLIMITED Logo Design Concepts" },
         { text: "By 4 Designers" },
@@ -771,7 +771,7 @@ const PricingCards: React.FC = () => {
       title: "Basic Maintenance Package",
       price: "$199",
       originalPrice: "$285",
-      referralDiscount: "40%",
+      referralDiscount: "30%",
       features: [
         { text: "3 Months Package" },
         { text: "BackupBuddy" },
@@ -797,7 +797,7 @@ const PricingCards: React.FC = () => {
       title: "Standard Maintenance Package",
       price: "$299",
       originalPrice: "$428",
-      referralDiscount: "40%",
+      referralDiscount: "30%",
       features: [
         { text: "6 Months Package" },
         { text: "BackupBuddy" },
@@ -823,7 +823,7 @@ const PricingCards: React.FC = () => {
       title: "Premium Maintenance Package",
       price: "$499",
       originalPrice: "$712",
-      referralDiscount: "40%",
+      referralDiscount: "30%",
       features: [
         { text: "12 Months Package" },
         { text: "BackupBuddy" },
@@ -849,7 +849,7 @@ const PricingCards: React.FC = () => {
       title: "Basic Branding Package",
       price: "$99",
       originalPrice: "$142",
-      referralDiscount: "40%",
+      referralDiscount: "30%",
       features: [
         { text: "1 Business Card Design" },
         { text: "1 Letterhead Design" },
@@ -869,7 +869,7 @@ const PricingCards: React.FC = () => {
       title: "Standard Branding Package",
       price: "$149",
       originalPrice: "$214",
-      referralDiscount: "40%",
+      referralDiscount: "30%",
       features: [
         { text: "2 Design Concepts (Trifold / Bi-fold)" },
         { text: "Dedicated Designer" },
@@ -888,7 +888,7 @@ const PricingCards: React.FC = () => {
       title: "Premium Branding Package",
       price: "$295",
       originalPrice: "$420",
-      referralDiscount: "40%",
+      referralDiscount: "30%",
       features: [
         { text: "1 Unique Design" },
         { text: "3 Design Concepts" },

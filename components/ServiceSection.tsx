@@ -128,7 +128,7 @@ const ServicesSection = () => {
               esign Solutions
             </div>
           </h2>
-          <Link href="Services">
+          <Link href="services">
             <motion.button
               className="relative px-6 py-3 rounded-full text-white text-sm flex items-center gap-2 bg-[#1a1a1a]/60 backdrop-blur-md border border-transparent group overflow-hidden"
               whileHover={{

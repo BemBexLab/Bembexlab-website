@@ -7,12 +7,12 @@ import { useState, useEffect } from "react";
 
 const navItems = [
   { label: "Home", href: "/" },
-  { label: "About us", href: "/Aboutus" },
-  { label: "Services", href: "/Services" },
+  { label: "About us", href: "/about-us" },
+  { label: "Services", href: "/services" },
   { label: "Portfolio", href: "/portfolio" },
-  { label: "Career", href: "/Career" },
-  { label: "Packages", href: "/Packages" },
-  { label: "Contact us", href: "/ContactUs" },
+  { label: "Career", href: "/career" },
+  { label: "Packages", href: "/packages" },
+  { label: "Contact us", href: "contact-us" },
 ];
 
 export default function Navbar() {
@@ -75,7 +75,7 @@ export default function Navbar() {
         </div>
 
         {/* 🚀 CTA Button (hidden on xs) */}
-        <Link href="/ContactUs">
+        <Link href="/contact-us">
           <div className="hidden lg:flex">
             <button className="rounded-full px-6 py-2 border-b-2 border-[#ff1e00] text-white bg-[#1a1a1a]/60 backdrop-blur-md flex items-center gap-2 shadow-[inset_0_2px_4px_rgba(255,255,255,0.1),inset_0_2px_6px_rgba(255,30,0,0.15)] hover:brightness-110 transition">
               Book a call <span className="text-xl">→</span>

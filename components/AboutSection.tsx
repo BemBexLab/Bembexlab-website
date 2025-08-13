@@ -23,7 +23,7 @@ const AboutSection = () => {
           </p>
 
           {/* 🔘 Glossy Learn More Button */}
-          <Link href='/Aboutus'>
+          <Link href='/about-us'>
             <button className="relative px-6 py-2.5 rounded-full text-white text-base font-light flex items-center gap-3 bg-[#1a1a1a]/60 backdrop-blur-md border border-[#ff1e00]/20 transition-all duration-300 group overflow-hidden">
               <span className="relative z-10 transition-all duration-300 group-hover:translate-x-1">
                 Learn More

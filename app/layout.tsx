@@ -11,24 +11,24 @@ export const metadata: Metadata = {
   description:
     "Elevate your online presence with our expert web design and development agency. We build fast, modern, responsive websites that drive results for startups, businesses, and brands.",
   // Helps Next make absolute URLs from relative ones below
-  metadataBase: new URL("https://bembexlab.vercel.app"),
+  metadataBase: new URL("https://bembexlab.com"),
 
   // ✅ Proper icons (avoid spaces in filenames)
   icons: {
-    icon: "/Bambex lab logo Text white 1 (1).png",
-    apple: "/Bambex lab logo Text white 1 (1).png",
+    icon: "/Group 32.png",
+    apple: "/Group 32.png",
   },
 
   // ✅ Open Graph for Facebook/LinkedIn/Slack etc.
   openGraph: {
     type: "website",
-    url: "https://bembexlab.vercel.app/",
+    url: "https://bembexlab.com/",
     siteName: "Bembex Lab",
     title: "Bembex Lab — Web Design & Development",
     description: "Fast, modern, responsive websites that drive results.",
     images: [
       {
-        url: "/Bambex lab logo Text white 1 (1).png", // resolves to absolute via metadataBase
+        url: "/Group 32.png", // resolves to absolute via metadataBase
         width: 1200,
         height: 630,
         alt: "Bembex Lab — web design & development",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Bembex Lab — Web Design & Development",
     description: "Fast, modern, responsive websites that drive results.",
-    images: ["/Bambex lab logo Text white 1 (1).png"],
+    images: ["/Group 32.png"],
   },
 };
 

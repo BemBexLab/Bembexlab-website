@@ -48,7 +48,7 @@ const HeroWithStats = () => {
 
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-            <Link href="/ContactUs">
+            <Link href="/contact-us">
               <button
                 className="flex items-center justify-center gap-3 bg-[#1a1a1a]/60 backdrop-blur-md border border-red-600 text-white px-6 py-3 rounded-full 
     hover:brightness-110  transition-all duration-300 ease-in-out 

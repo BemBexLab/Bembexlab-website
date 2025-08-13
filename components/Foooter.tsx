@@ -58,17 +58,17 @@ const Footer = () => {
                 "9.138px -9.138px 9.138px 0px rgba(169, 36, 3, 0.10) inset, -9.138px 9.138px 9.138px 0px rgba(255, 255, 255, 0.10) inset",
             }}
           >
-            <a href="/Packages" className="hover:text-[#ff4d2d] transition">
+            <a href="/packages" className="hover:text-[#ff4d2d] transition">
               Pricing
             </a>
-            <a href="/ContactUs" className="hover:text-[#ff4d2d] transition">
+            <a href="/contact-us" className="hover:text-[#ff4d2d] transition">
               Contact us
             </a>
-            <a href="/Terms" className="hover:text-[#ff4d2d] transition">
+            <a href="/terms" className="hover:text-[#ff4d2d] transition">
               Terms
             </a>
             <a
-              href="/PrivacyandPolicy"
+              href="/privacy-policy"
               className="hover:text-[#ff4d2d] transition"
             >
               Privacy

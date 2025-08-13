@@ -109,7 +109,7 @@ const ServicesSection = () => {
               viewport={{ once: true, margin: "-50px" }}
             >
               {/* Link Overlay */}
-              <Link href="/ContactUs" className="absolute inset-0 z-10" />
+              <Link href="/contact-us" className="absolute inset-0 z-10" />
 
               {/* Card Content */}
               <div className="relative z-20">
@@ -136,7 +136,7 @@ const ServicesSection = () => {
                 </p>
 
                 {/* Arrow */}
-                <Link href="/ContactUs">
+                <Link href="/contact-us">
                   <div
                     className="relative w-10 h-10 md:w-11 md:h-11 flex items-center justify-center rounded-[20px] bg-[rgba(222,47,4,0.10)] backdrop-blur-[33.15px] overflow-hidden cursor-pointer"
                     onClick={() => handleArrowClick(i)}
